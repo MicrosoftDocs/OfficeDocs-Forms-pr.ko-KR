@@ -5,20 +5,19 @@ author: dumptruckjon
 manager: kathyl
 audience: Admin
 ms.topic: how-to
-ms.service: forms-pro
+ms.service: microsoft-365-education
 ms.localizationpriority: high
 description: Microsoft 365 관리자가 조직에서 Microsoft Forms 사용 방법을 제어하는 방법을 알아봅니다. 또한 Microsoft Forms용 데이터가 저장되는 위치와 같은 보안 및 규정 준수 질문에 대한 답변을 알아보세요.
-ms.openlocfilehash: abee1557f379f646b277866f32fc0640c0b643cd
-ms.sourcegitcommit: 09bdc82ce67e74495b6c58d9c842e31c17956fc3
+ms.openlocfilehash: bb0e1a6ba8e2085550eb18a8bb393b34b197fe51
+ms.sourcegitcommit: 80aa5565b4008855be844e8e5ab3f2779fba9a83
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60951536"
+ms.lasthandoff: 01/05/2022
+ms.locfileid: "61723726"
 ---
 # <a name="set-up-microsoft-forms"></a>Microsoft Forms 설정
 
-
-## <a name="overview"></a>[개요](#tab/overview)
+## <a name="overview"></a>개요
 
 Microsoft Forms를 사용하면 사용자 지정 퀴즈, 설문 조사, 선문지, 등록서 등을 쉽고 빠르게 만들 수 있습니다. 퀴즈 또는 설문지를 만들 때 모든 웹 브라우저를 사용하여 모바일 장치에서도 다른 사용자가 응답하도록 초대 할 수 있습니다. 결과가 제출되면 기본 제공 분석을 사용하여 응답을 평가할 수 있습니다. 퀴즈 결과와 같은 양식 데이터는 추가 분석이나 채점을 위해 Excel로 쉽게 내보낼 수 있습니다.
 
@@ -29,58 +28,19 @@ Microsoft Forms를 사용하면 사용자 지정 퀴즈, 설문 조사, 선문�
 
 :::image type="content" source="./media/set-up-forms-team-event.png" alt-text="휴대용 장치에서 양식이 어떻게 보이는지에 대한 미리 보기.":::
 
-## <a name="configure"></a>[구성](#tab/configure)
+## <a name="configure"></a>구성하기
 
 Microsoft 365 관리자는 다음 작업을 통해 조직에서 Microsoft Forms를 사용하는 방법을 제어할 수 있습니다.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>관리자 작업</strong></th>
-<th><strong>설명</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Microsoft Forms 끄기 또는 켜기</strong></td>
-<td>Microsoft Forms는 기본적으로 조직에 대해 켜져 있습니다. 언제든지 <a href="https://support.microsoft.com/office/turn-off-or-turn-on-microsoft-forms-8dcbf3ab-f2d6-459a-b8be-8d9892132a43">해제</a>할 수 있습니다.</td>
-</tr>
-<tr class="even">
-<td><strong>조직의 개별 사용자에 대해 Microsoft Forms 끄기</strong></td>
-<td>특정 사용자에 대해 Microsoft Forms를 끄면 해당 사용자는 Microsoft Forms를 사용할 수 없으며 <strong>Forms</strong> 타일이 Microsoft 365 앱 시작 관리자 또는 홈페이지에 표시되지 않습니다.  <a href="https://support.microsoft.com/office/turn-off-or-turn-on-microsoft-forms-8dcbf3ab-f2d6-459a-b8be-8d9892132a43">특정 사용자의 양식을 해제</a>하는 방법에 대해 알아보세요. </td>
-</tr>
-<tr class="odd">
-<td><strong>Microsoft Forms에 대한 Azure Active Directory 조건부 액세스 설정</strong></td>
-<td><p>Microsoft Forms에 대한 조건부 액세스 정책을 설정하려면 <a href="/azure/active-directory/conditional-access/">Azure AD 조건부 액세스 문서</a>를 참조하고 <strong>클라우드 앱</strong> 할당에 <strong>Microsoft Form</strong>을 포함하세요.</p>
-<p><strong>참고: </strong>Microsoft Forms에 대한 조건부 액세스를 설정한 후에도 조직의 사용자가 계속 차단되는 경우 SharePoint Online 및 Exchange Online에도 조건부 액세스를 통해 액세스 권한이 부여되었는지 확인하세요. <a href="/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo">자세히 알아보기</a>.</p></td>
-</tr>
-<tr class="even">
-<td><strong>외부 공유 설정 제어, 조직 내 사람들의 이름 기록 및/또는 피싱으로부터 양식 보호</strong></td>
-<td><p>Microsoft 365 관리 센터에서 다음을 수행할 수 있습니다.</p>
-<ul>
-<li><p>외부 사용자가 양식 또는 퀴즈에서 조직의 사용자와 공동 작업할 수 있는지 여부를 제어합니다.</p></li>
-<li><p>조직에서 양식을 작성하는 사람의 이름을 캡처할지 여부를 선택합니다.</p></li>
-<li><p>양식에서 자동 피싱 탐지를 끄거나 켭니다.</p></li>
-</ul>
-<p><a href="https://support.microsoft.com/office/administrator-settings-for-microsoft-forms-48161c55-fbae-4f37-8951-9e3befc0248b">관리자 설정</a>에 대해 자세히 알아보세요.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>사용자가 PowerPoint에 양식을 삽입할 수 있도록 허용</strong></td>
-<td><ol type="1">
-<li><p><a href="https://admin.microsoft.com/">https://admin.microsoft.com</a>에 로그인합니다.</p></li>
-<li><p><strong>설정</strong> &gt; <strong>설정</strong>을 클릭합니다.</p></li>
-<li><p><strong>설정</strong> 페이지의 <strong>서비스</strong> 탭에서 <strong>사용자 소유 앱 및 서비스</strong>를 클릭합니다.</p></li>
-<li><p>사용자가 PowerPoint에 양식을 삽입할 수 있도록 허용하려면 <strong>사용자가 Office 스토어에 액세스하도록 허용</strong> 옵션을 선택합니다.</p></li>
-</ol>
-<blockquote>
-<p>변경 내용이 적용되는 데 몇 시간이 걸릴 수 있습니다. <a href="/office365/admin/manage/manage-deployment-of-add-ins>Learn more</a>.</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+|관리자 작업   |설명   |
+|----------|-----------|
+|**Microsoft Forms 끄기 또는 켜기**|Microsoft Forms는 기본적으로 조직에 대해 켜져 있습니다. 언제든지 [해제](turn-off-turn-on-microsoft-forms.md)할 수 있습니다.|
+|**조직의 개별 사용자에 대해 Microsoft Forms 끄기**|특정 사용자에 대해 Microsoft Forms를 끄면 해당 사용자는 Microsoft Forms를 사용할 수 없으며 *Forms* 타일이 Microsoft 365 앱 시작 관리자 또는 홈페이지에 표시되지 않습니다. [특정 사용자의 양식을 해제](turn-off-turn-on-microsoft-forms.md)하는 방법에 대해 알아보세요.|
+|**Microsoft Forms에 대한 Azure Active Directory 조건부 액세스 설정**|Microsoft Forms에 대한 조건부 액세스 정책을 설정하려면 [Azure AD 조건부 액세스 문서](/azure/active-directory/conditional-access)를 참조하고 *클라우드 앱* 할당에 *Microsoft Form*을 포함하세요. <br/><br/> **참고: **Microsoft Forms에 대한 조건부 액세스를 설정한 후에도 조직의 사용자가 계속 차단되는 경우 SharePoint Online 및 Exchange Online에도 조건부 액세스를 통해 액세스 권한이 부여되었는지 확인하세요. [자세히 알아보기](/azure/active-directory/conditional-access/block-legacy-authentication).|
+|**외부 공유 설정 제어, 조직 내 사람들의 이름 기록 및/또는 피싱으로부터 양식 보호**|Microsoft 365 관리 센터에서 다음을 수행할 수 있습니다. <ul><li>외부 사용자가 양식 또는 퀴즈에서 조직의 사용자와 공동 작업할 수 있는지 여부를 제어합니다.</li><li>조직에서 양식을 작성하는 사람의 이름을 캡처할지 여부를 선택합니다.</li><li>양식에서 자동 피싱 탐지를 끄거나 켭니다.</li></ul><br/>[관리자 설정](administrator-settings-microsoft-forms.md)에 대해 자세히 알아보세요.|
+|**사용자가 PowerPoint에 양식을 삽입할 수 있도록 허용**|<ol><li>https://admin.microsoft.com에 로그인합니다.</li><li>**설정** > **설정**을 클릭합니다.</li><li>**설정** 페이지의 **서비스** 탭에서 **사용자 소유 앱 및 서비스**를 클릭합니다.</li><li>사용자가 PowerPoint에 양식을 삽입할 수 있도록 허용하려면 **사용자가 Office 스토어에 액세스하도록 허용** 옵션을 선택합니다.</li></ol><br/>변경 내용이 적용되는 데 몇 시간이 걸릴 수 있습니다. [자세한 정보](/microsoft-365/admin/manage/manage-deployment-of-add-ins)|
 
-
-## <a name="security--compliance"></a>[보안 및 규정 준수](#tab/security)
+## <a name="security--compliance"></a>보안 및 규정 준수
 
 비즈니스에 콘텐츠 보안 및 데이터 사용에 대해 충족해야 할 법적, 규제 및 기술 표준이 있는 경우 이 섹션이 적합합니다.
 
@@ -90,17 +50,17 @@ Microsoft Forms 데이터는 미국과 유럽의 서버에 저장됩니다. 2017
 
 **Microsoft Forms는 준수 요구 사항을 충족하나요?**
 
-Microsoft Forms는 2018년 5월 현재 GDPR 준수 요구 사항을 충족했습니다. 자세한 내용은 [GDPR에 대한 Microsoft 365 데이터 주체 요청](/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json)을 참조하세요.
+Microsoft Forms는 2018년 5월 현재 GDPR 준수 요구 사항을 충족했습니다. 자세한 내용을 확인하려면 [GDPR에 대한 Microsoft 365 데이터 주체 요청](/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json)으로 이동하세요.
 
 **FERPA 및 BAA 보호 조치가 마련되어 있나요?**
 
 Microsoft Forms는 [FERPA](https://www.microsoft.com/trustcenter/compliance/ferpa) 및 [BAA 보호 표준](https://www.microsoft.com/TrustCenter/Compliance/HIPAA)을 충족합니다.
 
-*사용자가 퇴사한 후에도 사용자 계정에 저장되는 데이터의 양과 사용자 수에 제한이 있나요?*
+**사용자가 퇴사한 후에도 사용자 계정에 저장되는 데이터의 양과 사용자 수에 제한이 있나요?**
 
 현재, 계정 프로비전이 조직의 온라인 서비스 계약 내에 있는 한 데이터가 보존되는 사용자 수에는 제한이 없습니다. 사용자 계정에 저장되는 데이터의 양에도 제한이 없습니다.
 
-*양식의 원래 소유자가 더 이상 내 조직에 있지 않거나 Microsoft Forms 라이선스가 제거되었습니다. 해당 사용자들이 만든 양식과 연결된 데이터는 어떻게 되나요?*
+**양식의 원래 소유자가 더 이상 내 조직에 있지 않거나 Microsoft Forms 라이선스가 제거되었습니다. 해당 사용자들이 만든 양식과 연결된 데이터는 어떻게 되나요?**
 
 모든 계정 관련 데이터는 사용자 계정이 테넌트(Azure AD)에서 삭제된 후 30일이 지나면 삭제됩니다.
 
@@ -114,7 +74,7 @@ Microsoft Forms는 설문 조사, 퀴즈 및 투표를 쉽게 만들 수 있는 
 
 Microsoft Forms는 Microsoft 계정(Hotmail, Live 또는 Outlook.com)이 있다면 누구나 무료로 사용할 수 있습니다. 다음 Office 365 Education 및 기업용 Microsoft 365 앱 고객도 Microsoft Forms를 사용할 수 있습니다.
 
-Office 365 Education
+**Office 365 Education**
 
   - Office 365 A1 Plus
 
@@ -122,7 +82,7 @@ Office 365 Education
 
   - 사용 중지 전에 Office 365 Education E3를 구매한 기존 고객
 
-비즈니스용 Microsoft 365 앱
+**비즈니스용 Microsoft 365 앱**
 
   - Microsoft 365 Business Basic
 
@@ -164,8 +124,8 @@ Microsoft InfoPath는 기존 회사 양식을 디지털화하고 워크플로를
 
 **어디서 제품 버그 또는 기능 요청과 같은 피드백을 제출할 수 있습니까?**
 
-의견을 보내 주세요.\! Microsoft Forms에 대한 의견을 보내려면 양식의 오른쪽 상단으로 이동하여 **추가 양식 설정** ![추가 옵션 버튼](./media/image2.png)\> **피드백**을 선택하세요.
+의견을 보내 주세요.  Microsoft Forms에 대한 의견을 보내려면 양식의 오른쪽 상단으로 이동하여 **추가 양식 설정** ![추가 옵션 버튼](./media/image2.png) > **피드백**을 선택하세요.
 
->[!Note]
->자세한 내용은 [Microsoft Forms에 대해 자주 묻는 질문](https://support.microsoft.com/office/frequently-asked-questions-about-microsoft-forms-495c4242-6102-40a0-add8-df05ed6af61c)을 참조하세요.
+> [!Note]
+> 자세한 내용은 [Microsoft Forms에 대해 자주 묻는 질문](https://support.microsoft.com/office/frequently-asked-questions-about-microsoft-forms-495c4242-6102-40a0-add8-df05ed6af61c)을 참조하세요.
 
